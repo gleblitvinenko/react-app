@@ -1,18 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
 
 const App = () => {
 
   return (
-    <div className='App'>
-      <ul>
-        <li>
-
-
-        </li>
-        <li></li>
-      </ul>
+    <div>
+      <Header/>
     </div>
+    
   );
 
 }
