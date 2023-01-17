@@ -12,21 +12,12 @@
 header,
 footer,
 section {
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 header, footer{
   background-color: var(--color1);
 }
-
-header{
-  padding: 30px 0;
-}
-
-header a{
-  color: var(--color2);
-}
-
 
 .color1 {
   color: var(--color1)

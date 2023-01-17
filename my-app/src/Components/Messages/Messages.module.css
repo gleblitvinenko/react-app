@@ -1,0 +1,30 @@
+.messageitem:hover{
+    transition: 0.5s !important;
+    opacity:0.8 !important;
+}
+.bg_eee{
+    background: #eee !important;
+}
+.navlink__img{
+    width: 50px;
+    border-radius: 50%;
+}
+.messages_full_box{
+    background-color: #000;
+}
+.messages_left_side{
+    width: 35%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    flex:0 1 auto;
+    overflow:scroll;
+    
+}
+
+.messages_right_side{
+    width: 65%;
+    padding: 20px;
+}

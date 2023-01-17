@@ -1,0 +1,38 @@
+a{
+    text-decoration: none !important;
+}
+a:visited{
+    color: inherit;
+}
+a:hover{
+    transition: 0.4s;
+    opacity: 0.8;
+}
+.post__top{
+    gap: 10px;
+
+}
+.post__top__img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.post__top__nickname{
+    
+}
+.post__main__img{
+    width: 300px;
+}
+.post__footer{
+    gap: 10px;
+}
+
+.post__footer__icon:hover{
+    opacity: 0.9;
+}
+.post__footer__icon:active{
+    color:red;
+}
+.post__footer__likes{
+
+}
