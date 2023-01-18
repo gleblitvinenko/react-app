@@ -30,9 +30,7 @@ a:hover{
 .post__footer__icon:hover{
     opacity: 0.9;
 }
-.post__footer__icon:active{
-    color:red;
-}
+
 .post__footer__likes{
 
 }

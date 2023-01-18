@@ -27,4 +27,73 @@
 .messages_right_side{
     width: 65%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages_zone{
+    flex: 1 1 auto
+}
+
+.send_message_zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.send_message{
+    display: flex;
+    border: 1px solid;
+    width: 100%;
+    justify-content:space-evenly ;
+    align-items: center;
+    border-radius: 30px;
+}
+.send_message__emoji{
+
+}
+.send_message__text_area_block{
+    display: flex;
+    align-items: center;
+}
+.send_message__text_area{
+    display: inline-block;
+    text-align: start;
+    width: 600px;
+    background-color: transparent;
+    outline: none ;
+    border:none;
+    /* resize: none; */
+    overflow-y: scroll;
+}
+
+
+.send_message__text_area::placeholder{
+    /* padding: 12px 0; */
+}
+.send_message__photo{
+
+}
+.send_message__heart{
+
+}
+
+.send_message i {
+    font-size: 30px;
+}
+
+.emoji_icon{
+
+}
+.photo_icon{
+
+}
+.heart_icon:hover,.photo_icon:hover , .emoji_icon:hover {
+    color: blue;
+    transition: .5s;
+}
+
+.heart_icon{
+
 }

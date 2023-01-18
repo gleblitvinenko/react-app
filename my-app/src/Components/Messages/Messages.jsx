@@ -16,7 +16,7 @@ const MessagesItem = (props) => {
 }
 
 const ChatMessages = (props) => {
-  return(
+  return (
     <span>
       {props.text}
     </span>
@@ -24,19 +24,38 @@ const ChatMessages = (props) => {
   );
 }
 
-function Messages(props) {
+const Messages = (props) => {
 
-  let UsersElements = props.UsersData.map(el => <MessagesItem avatar={el.avatar} nickname={el.nickname} action={el.action} id={el.id}/>);
+  let newMessage = React.createRef();
+
+  let sendMessage = () => {
+    let text = newMessage.current.value;
+    alert(text);
+  }
+
+  let UsersElements = props.UsersData.map(el => <MessagesItem avatar={el.avatar} nickname={el.nickname} action={el.action} id={el.id} />);
 
   return (
     <div className={`container`}>
       <div className="col pt-5">
         <div className={`${cl.messages_full_box} ${cl.bg_eee} d-flex`}>
           <div className={`${cl.messages_left_side} ${cl.bg_eee} border-end `}>
-           {UsersElements}
+            {UsersElements}
           </div>
           <div className={`${cl.messages_right_side} ${cl.bg_eee}`}>
-            <ChatMessages text="some text"/>
+            <div className={cl.messages_zone}>
+              <ChatMessages text="some text" />
+            </div>
+            <div className={cl.send_message_zone}>
+              <div className={cl.send_message}>
+                <div className={cl.send_message__emoji}><i className={`${cl.emoji_icon} bi bi-emoji-wink`}></i></div>
+                <div className={cl.send_message__text_area_block}>
+                  <input ref={newMessage} placeholder='Write your message...' className={cl.send_message__text_area}></input>
+                </div>
+                <div className={cl.send_message__photo}><i className={`${cl.photo_icon} bi bi-image`}></i></div>
+                <div className={cl.send_message__heart}><i onClick={sendMessage} className={`${cl.heart_icon} bi bi-arrow-up-circle-fill`}></i></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
